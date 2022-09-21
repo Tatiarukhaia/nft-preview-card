@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nft-preview-card-component</title>
+</head>
+<body>
+    <div id="main">
+        <img id="main_pic" src="/nft-preview-card-component/images/image-equilibrium.jpg"/>
+        <h1>
+            Equilibrium #3429
+        </h1>
+        <p>
+            Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div id="price_date">
+            <div id="price">
+                <img id="eth_icon" src="/nft-preview-card-component/images/icon-ethereum.svg"/>
+                <span id="eth">0.041 ETH</span>
+            </div>
+            <div id="date">
+                <img id="date_icon" src="/nft-preview-card-component/images/icon-clock.svg"/>
+                <span id="clock">3 days left</span>
+            </div>
+        </div>
+        <div id="line"></div>
+        <div id="footer">
+            <img id="author_img" src="/nft-preview-card-component/images/image-avatar.png"/>
+            <span id="author_name1">Creation of </span>
+            <span id="author_name2">Jules Wyvern</span>
+        </div>
+    </div>
+
+
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+        body{
+            background-color: #0D192C;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        #main{
+            background-color: #15263F;
+            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+            border-radius: 15px;
+            border-radius: 15px;
+            width: 350px;
+            padding: 24px;
+            padding-bottom: 32px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        #main_pic{
+            height: 302px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        h1{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        p{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #8BACD9;
+            width: 302px;
+        }
+        #price{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #00FFF8;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #date{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8BACD9;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #price_date{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #line{
+            width: 100%;
+            height: 1px;
+            background: #2E405A;
+            margin-top: 24px;
+        }
+        #author_img{
+            height: 33px;
+            width: 33px;
+            left: 24px;
+            top: 531px;
+            border-radius: 50%;
+            border: 1px solid #FFFFFF;
+        }
+        #author_name1{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #8BACD9;
+            margin-left: 16px;
+            margin-right: 5px;
+        }
+        #author_name2{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+        #footer{
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #eth_icon{
+            margin-right: 6.49px;
+        }
+
+        #date_icon{
+            margin-right: 9.03px;
+        }
+    </style>
+
+
+
+</body>
+</html>
+
+
