@@ -8,7 +8,13 @@
 </head>
 <body>
     <div id="main">
-        <img id="main_pic" src="/nft-preview-card-component/images/image-equilibrium.jpg"/>
+        <div id="main_picture">
+            <img id="main_pic" src="./nft-preview-card-component/images/image-equilibrium.jpg"/>
+            <div id="box">
+                <img id="eye" src="./nft-preview-card-component/images/icon-view.svg" alt="no image"/>
+            </div>
+        </div>
+        
         <h1>
             Equilibrium #3429
         </h1>
@@ -17,17 +23,17 @@
         </p>
         <div id="price_date">
             <div id="price">
-                <img id="eth_icon" src="/nft-preview-card-component/images/icon-ethereum.svg"/>
+                <img id="eth_icon" src="./nft-preview-card-component/images/icon-ethereum.svg"/>
                 <span id="eth">0.041 ETH</span>
             </div>
             <div id="date">
-                <img id="date_icon" src="/nft-preview-card-component/images/icon-clock.svg"/>
+                <img id="date_icon" src="./nft-preview-card-component/images/icon-clock.svg"/>
                 <span id="clock">3 days left</span>
             </div>
         </div>
         <div id="line"></div>
         <div id="footer">
-            <img id="author_img" src="/nft-preview-card-component/images/image-avatar.png"/>
+            <img id="author_img" src="./nft-preview-card-component/images/image-avatar.png"/>
             <span id="author_name1">Creation of </span>
             <span id="author_name2">Jules Wyvern</span>
         </div>
@@ -54,7 +60,6 @@
             box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
             border-radius: 15px;
             border-radius: 15px;
-            width: 350px;
             padding: 24px;
             padding-bottom: 32px;
             display: block;
@@ -64,9 +69,12 @@
         }
         #main_pic{
             height: 302px;
-            width: 100%;
+            width: 302px;
             border-radius: 8px;
+            visibility: visible;
+            cursor: pointer;
         }
+        
         h1{
             font-family: 'Outfit';
             font-style: normal;
@@ -75,6 +83,13 @@
             line-height: 28px;
             color: #FFFFFF;
         }
+        h1:hover{
+            color: #00FFF8;
+            cursor: pointer;
+;
+        }
+
+
         p{
             font-family: 'Outfit';
             font-style: normal;
@@ -150,6 +165,11 @@
             line-height: 20px;
             color: #FFFFFF;
         }
+        #author_name2:hover{
+            cursor: pointer;
+            color: #00FFF8;
+;
+        }
         #footer{
             margin-top: 16px;
             display: flex;
@@ -166,11 +186,68 @@
         #date_icon{
             margin-right: 9.03px;
         }
+
+    #background_color{
+        position: absolute;
+        height: 302px;
+        width: 302px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background: #00FFF8;
+        mix-blend-mode: normal;
+        opacity: 0;
+        border-radius: 8px;
+    }
+
+    #background_color:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    #eye{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #main_picture:hover #eye{
+        display: block;
+    }
+
+    #main_picture:hover #box{
+        display: flex;
+        background: rgba(0, 255, 248, 0.2);
+        width: 100%;
+    }
+
+
+    #main_picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
     </style>
 
-
+    
 
 </body>
 </html>
+
 
 
